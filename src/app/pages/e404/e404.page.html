@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Página no encontrada</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  <div class="container">
+    <img src="assets/images/e404.png" alt="Página no encontrada" class="error-image"> <!-- Asegúrate de que la imagen esté en la carpeta correcta -->
+    
+    <h1 class="error-code">404</h1>
+    <p>Lo sentimos, la página que buscas no existe.</p>
+    
+    <ion-button expand="full" (click)="goToLogin()">Volver al Login</ion-button>
+  </div>
+</ion-content>
+
+<style>
+  .container {
+    text-align: center;
+    padding: 20px; 
+  }
+
+  .error-image {
+    width: 100%; 
+    max-width: 400px; 
+    margin-bottom: 20px; 
+  }
+
+  .error-code {
+    font-size: 48px;
+    color: #ff0000; 
+    margin: 20px 0; 
+  }
+
+  ion-button {
+    margin-top: 20px; 
+  }
+</style>

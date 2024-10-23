@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Respawn Burgers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  <div class="container">
+    <!-- Mensaje de bienvenida -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">Bienvenido a Respawn Burgers, {{ usuarioNombre }}!</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <!-- Menú de hamburguesas -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="6">
+          <ion-card class="menu-card">
+            <ion-img src="assets/images/png-hamburgesa.png"></ion-img>
+            <ion-card-header>
+              <ion-card-title>La Bat-Burger</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Hamburguesa de carne Angus con queso suizo, champiñones salteados y alioli de trufa.
+              <p><strong>Precio: 10.000 CLP</strong></p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12" size-md="6">
+          <ion-card class="menu-card">
+            <ion-img src="assets/images/png-hamburgesa2.png"></ion-img>
+            <ion-card-header>
+              <ion-card-title>La Ghost Recon Burger</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Hamburguesa de carne a la parrilla con queso cheddar ahumado, cebolla caramelizada, bacon crujiente, y salsa de ajo negro, servida en un pan brioche de carbón activado.
+              <p><strong>Precio: 10.000 CLP</strong></p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+<style>
+  .container {
+    max-width: 600px; 
+    margin: auto; 
+    padding: 20px; 
+  }
+
+  .menu-card {
+    margin-top: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  }
+
+  ion-card-title {
+    text-align: center; 
+  }
+
+  ion-card-content {
+    text-align: justify; 
+  }
+</style>
